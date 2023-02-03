@@ -1,4 +1,4 @@
-package com.prosoft.onlinelibrarydemo;
+package com.prosoft;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

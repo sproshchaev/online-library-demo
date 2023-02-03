@@ -1,4 +1,4 @@
-package com.prosoft.onlinelibrarydemo.entities;
+package com.prosoft.entities;
 
 import javax.persistence.*;
 import java.util.Objects;
