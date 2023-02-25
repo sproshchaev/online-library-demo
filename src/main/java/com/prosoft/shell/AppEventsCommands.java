@@ -44,7 +44,7 @@ public class AppEventsCommands {
 
     @ShellMethod(value = "Get Author By id", key = {"gabi", "getauthorbyid"})
     public void getAuthorById(@ShellOption(defaultValue = "1") long id) {
-        System.out.println(authorService.getAuthorById(id).toString());
+        System.out.println(authorService.getAuthorById(id).get());
     }
 
     @ShellMethod(value = "Updating information about the author", key = {"ua", "updateauthor"})
