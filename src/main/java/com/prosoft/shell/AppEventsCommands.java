@@ -47,6 +47,11 @@ public class AppEventsCommands {
         System.out.println(authorService.getAuthorById(id).get());
     }
 
+    @ShellMethod(value = "Get authors by full name", key = {"gabfn", "getauthorbyfullname"})
+    public void getAuthorsByFullName(@ShellOption(defaultValue = "Daniel Defoe") String fullName) {
+        System.out.println(authorService.getAuthorsByFullName(fullName));
+    }
+
     @ShellMethod(value = "Updating information about the author", key = {"ua", "updateauthor"})
     public void updateAuthor(
             @ShellOption(defaultValue = "1") long id,

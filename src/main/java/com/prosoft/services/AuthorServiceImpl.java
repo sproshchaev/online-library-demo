@@ -48,4 +48,10 @@ public class AuthorServiceImpl implements AuthorService {
     public Author createAuthor(Author author) {
         return authorRepository.save(author);
     }
+
+    @Override
+    public List<Author> getAuthorsByFullName(String fullName) {
+        return authorRepository.getAuthorByFullName(fullName);
+    }
+
 }

@@ -16,4 +16,6 @@ public interface AuthorService {
 
     Author createAuthor(Author author);
 
+    List<Author> getAuthorsByFullName(String fullName);
+
 }
